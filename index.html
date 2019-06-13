@@ -1,0 +1,276 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/style.css">
+  <script src="jquery-ui-1.12.1.custom/jquery-1.12.4.js"></script>
+  <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "Nowhereville, XX, 000000",
+      "Somewhereville, VV, 11111",
+      "Upthereville, WW, 22222",
+      "Inthereville, UU, 33333"
+      
+    ];
+    $( "#zipCode" ).autocomplete({
+	  width: 500,
+      source: availableTags
+    });
+	$( "#category" ).selectmenu();
+   $( "#Family" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	$( "#Criminal" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	$( "#Business" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+   $( "#Personal" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	$( "#Bankruptcy" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	$( "#Products" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	$( "#Employment" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	$( "#Real" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	 $( "#Immigration" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	$( "#Wills" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	$( "#Government" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+	$( "#Intellectual" ).dialog({
+	  autoOpen: false,
+	  height: 300,
+      width: 550,
+      modal: true,
+      buttons: {
+        "FIND A LAWYER NOW": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+
+ $( "#category" ).selectmenu({
+  width: 500,
+  select: function( event, ui ) {
+  stringValue="#"+$('#category').val();
+  $(stringValue).dialog("open");
+  
+  
+  }
+});
+
+  } );
+  </script>
+</head>
+<body>
+
+		<div id="header"><img src="images/header.png"></div>
+		
+		<div id="#container">
+			<div id="#wrapper">
+				<div id="content">
+					<div id="#centercontent">
+									<div id="innertext">
+								<h1>Find a Laywer for your Legal Issue</h>
+								<h2>Fast, Free and Confidential</h>
+								</div>
+								<div id="innerform">
+								  <label for="zipCode">Enter Zip Code or City: </label>
+								  <br>
+								  <input id="zipCode" >
+								 </div> 
+								 <div id="innerform">
+								  <label for="category">Choose a category: </label>
+								  <br>
+								 <select name="category" id="category">
+									  <option >Click to choose a legal category</option>
+									  <option value="Family">Family</option>
+									  <option value="Criminal">Criminal Defense</option>
+									  <option value="Business">Business</option>
+									  <option value="Personal">Personal Inquiry</option>
+									  <option value="Bankruptcy">Bankruptcy & Finances</option>
+									  <option value="Products">Products & Services</option>
+									  <option value="Employment">Employment</option>
+									  <option value="Real">Real Estate</option>
+									  <option value="Immigration">Immigration</option>
+									  <option value="Wills">Wills, Trusts & Estates</option>
+									  <option value="Government">Government</option>
+									  <option value="Intellectual">Intellectual Property</option>
+
+								  </select>
+
+								</div>
+								 
+								 <div id="Family" >
+								  <p>Which Family Law issue(s) apply your case?</p>
+								   <div class="newspaper">
+
+										
+										<span style="white-space: nowrap;"><input type="checkbox" name="data" value="some value" id="some id" /><label for="pizza stuff">Adoption</label></span><br/>
+										<span style="white-space: nowrap;"><input type="checkbox" name="data" value="some value" id="some id" /><label for="pizza stuff">Guardianship</label></span><br/>
+										<span style="white-space: nowrap;"><input type="checkbox" name="data" value="some value" id="some id" /><label for="pizza stuff">Child Custody and Visitation</label></span><br/>
+										<span style="white-space: nowrap;"><input type="checkbox" name="data" value="some value" id="some id" /><label for="pizza stuff">Paternity</label></span><br/>
+										<span style="white-space: nowrap;"><input type="checkbox" name="data" value="some value" id="some id" /><label for="pizza stuff">Child Support</label></span><br/>
+										<span style="white-space: nowrap;"><input type="checkbox" name="data" value="some value" id="some id" /><label for="pizza stuff">Separations</label></span><br/>
+										<span style="white-space: nowrap;"><input type="checkbox" name="data" value="some value" id="some id" /><label for="pizza stuff">Divorce</label></span><br/>
+										<span style="white-space: nowrap;"><input type="checkbox" name="data" value="some value" id="some id" /><label for="pizza stuff">Spousal Support or Alimony</label></span><br/>
+										
+									</div>
+
+								</div>
+
+								<div id="Criminal" >
+								  <p>This is the Criminal Defense dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								<div id="Business" >
+								  <p>This is the Business dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								<div id="Personal" >
+								  <p>This is the Personal Inquiry dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								 <div id="Bankruptcy" >
+								  <p>This is the Bankruptcy & Finances dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								<div id="Products" >
+								  <p>This is the Products & Services dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								<div id="Employment" >
+								  <p>This is the Employment dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								<div id="Real" >
+								  <p>This is the Real Estate dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								<div id="Immigration" >
+								  <p>This is the Immigration dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								<div id="Wills" >
+								  <p>This is the Wills, Trusts & Estates dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								<div id="Government" >
+								  <p>This is the Government dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+								<div id="Intellectual" >
+								  <p>This is the Intellectual Property dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+								</div>
+					</div>
+					<div id="#rightcontent">		
+
+					</div>
+				</div>
+				<div id="sidebar" >&nbsp;
+				</div>
+				<div id="cleared"></div>
+			</div>
+		</div>
+			
+		<div id="footer"><img src="images/footer.png"></div>
+
+	</div>	
+</body>
+</html>
